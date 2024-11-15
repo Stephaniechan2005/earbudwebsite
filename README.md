@@ -1,6 +1,6 @@
 # portfolio
 
-This repo is for my portfolio of Interactive Media Design. Please check out the portfolio website for more information.
+This repo is for my Earbud website. Please check out thecool earbuds.
 
 ## Installation
 
