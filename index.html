@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/grid.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stephanie's Portfolio</title>
+  </head>
+  <body>
+    <h1 class="hidden">Stephanie's Portfolio</h1>
+    <!-- Main Nav -->
+    <div id="sticky-nav-con">
+      <header class="grid-con" id="main-header">
+        <div
+          id="logo"
+          class="col-start-1 col-end-2 m-col-start-1 m-col-end-2 l-col-start-1 l-col-end-2 xl-col-start-1 xl-col-end-2"
+        >
+          <img src="images/logo.svg" alt="Logo" />
+        </div>
+        <nav
+          id="main-nav"
+          class="col-start-5 col-end-6 m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9 xl-col-start-5 xl-col-end-8"
+        >
+          <div id="burger-con">
+            <!-- Close button -->
+            <h2 class="hidden">Main Nav</h2>
+            <ul>
+              <li><a href="index.html">Project</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="toggle_button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <div id="mobile_dropdown_menu">
+          <ul>
+            <li><a href="index.html">Project</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <section id="header-con" class="grid-con">
+      <h2 class="hidden">Header</h2>
+      <div
+        class="col-span-full m-col-start-1 m-col-end-10 l-col-start-1 l-col-end-10 xl-col-start-1 xl-col-end-10"
+      >
+        <p>
+          Hi, I'm Stephanie Chan - Your Go-To Expert for Digital Innovation!
+          <br />With 5 years of experience in Web Development, UX/UI Design, and
+          Business Analysis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Demo Video -->
+    <section id="demo-video-con">
+      <div id="demo-video" class="grid-con">
+        <div id="video" class="col-span-full m-col-span-full l-col-span-full">
+          <section id="player-container">
+            <h2 class="hidden">Video</h2>
+            <div class="col-span-full m-col-span-full l-col-span-full">
+              <video
+                class="player"
+                preload="metadata"
+                poster="images/Video-thumbnail.jpg"
+              >
+                <source
+                  src="video/Hackathon-Video-Draft.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="video/Hackathon-Video-Draft.webm"
+                  type="video/webm"
+                />
+                <p>
+                  Oops, something went wrong. You may be using a outdated
+                  browser or have javascript disabled.
+                </p>
+              </video>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="model-con">
+      <div id="model" class="grid-con">
+        <div
+          id="wholemodel"
+          class="col-span-full m-col-span-full l-col-span-full"
+        >
+          <model-viewer
+            id="model"
+            src="model/earbud2.gltf"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            tone-mapping="neutral"
+            poster="images/poster.webp"
+            shadow-intensity="1"
+            environment-image="legacy"
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="-1.706910139855831m 2.463965102693865m -0.363869066126399m"
+              data-normal="0.01363356020783673m -0.3772070627249471m -0.9260285945188071m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-1"></div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-2"
+              data-position="-0.8395772298004205m 2.474315731466862m -1.4055994720409921m"
+              data-normal="0.8789347059177125m -0.29531297070959195m -0.37451840016749555m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-2"></div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-3"
+              data-position="-1.7848849366879875m 1.6552968321643071m 0.03890359379694963m"
+              data-normal="0.007320101477339931m -0.47284421710610763m 0.8811156351261018m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-3"></div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-4"
+              data-position="-1.6800677489225875m -0.22492789860135298m -0.3771073490994443m"
+              data-normal="-0.0015739030880706272m 0.013417173572717328m -0.9999087469776375m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-4"></div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-5"
+              data-position="-3.294605041143712m 1.041220154562347m 0.24826226022868259m"
+              data-normal="-0.48106766290955655m -0.02535571252892836m 0.8763167187409402m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-5"></div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-6"
+              data-position="-1.063341114175546m 2.7107044844295025m -0.3713154009812387m"
+              data-normal="0.892910852468071m 0.450198610724214m -0.005605394431291444m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-6"></div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">View in your space</button>
+            <div id="ar-prompt">
+              <img src="images/ar_hand_prompt.png" />
+            </div>
+          </model-viewer>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects-con">
+      <div id="projects-img" class="grid-con">
+        <h2 class="hidden">Projects</h2>
+        <div class="box"><a href="project.html">Project1</a></div>
+        <div class="box">Project2</div>
+        <div class="box">Project3</div>
+        <div class="box">Project4</div>
+        <div class="box">Project5</div>
+        <div class="box">Project6</div>
+        <!--
+        <img src="images/Project1.png" alt="Project1" />
+        <img src="images/Project2.png" alt="Project2" />
+        <img src="images/Project3.png" alt="Project3" />
+        <img src="images/Project4.png" alt="Project4" />
+        <img src="images/Project5.png" alt="Project5" />
+        <img src="images/Project6.png" alt="Project6" />
+        -->
+      </div>
+    </section>
+
+    <!--Testimonials-->
+    <!--
+    <section id="testimonial">
+      <div class="grid-con">
+        <div
+          id="testimonial-h2"
+          class="col-span-full m-col-span-full l-col-span-full"
+        >
+          <h2>Testimonial</h2>
+        </div>
+      </div>
+      <div id="testimonial-box" class="grid-con">
+        <section
+          id="testimonial-con1"
+          class="col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-5 xl-col-start-1 xl-col-end-5"
+        >
+          <h3 class="hidden">Testimonial Content 1</h3>
+        </section>
+        <section
+          id="testimonial-con2"
+          class="col-span-full m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9 xl-col-start-5 xl-col-end-9"
+        >
+          <h3 class="hidden">Testimonial Content 2</h3>
+        </section>
+        <section
+          id="testimonial-con3"
+          class="col-span-full m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-13 xl-col-start-9 xl-col-end-13"
+        >
+          <h3 class="hidden">Testimonial Content 3</h3>
+        </section>
+      </div>
+    </section>
+-->
+
+    <!--Footer-->
+    <footer id="footer-hero">
+      <div id="footer-flex" class="grid-con">
+        <section id="footer-logo-info">
+          <h2 class="hidden">Footer Logo</h2>
+          <a href="#"><img src="images/facebook.svg" alt="facebook" /></a>
+          <a href="#"><img src="images/in.svg" alt="linkid" /></a>
+          <a href="#"><img src="images/ig.svg" alt="instagram" /></a>
+          <a href="#"><img src="images/youtube.svg" alt="youtube" /></a>
+        </section>
+        <section id="footer-nav">
+          <h2 class="hidden">About Us</h2>
+          <nav>
+            <div id="footer-menu">
+              <h2 class="hidden">About Us Nav</h2>
+              <ul>
+                <li><a href="index.html" class="active">Project</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+        <section id="footer-logo-2">
+          <h2 class="hidden">Footer Privacy</h2>
+          <p>&copy; 2024 Stephanie Chan</p>
+        </section>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

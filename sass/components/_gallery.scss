@@ -1,0 +1,45 @@
+/* 10. --- Gallery --- */
+#gallery_header {
+  display: flex;
+  align-items: center;
+}
+
+#slider-container {
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#image-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+  max-width: 100%;
+  max-height: 600px;
+}
+
+#prev-btn,
+#next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#prev-btn {
+  left: 0px;
+}
+#next-btn {
+  right: 0px;
+}
+
+#next-btn2 {
+  right: 0px;
+}

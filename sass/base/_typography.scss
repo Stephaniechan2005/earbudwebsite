@@ -1,0 +1,74 @@
+@use "../abstracts/variables" as v;
+
+#mobile-outline {
+  outline: 20px solid v.$dark;
+  max-width: 430px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    v.$light-pink-transparent,
+    v.$light-green-transparent
+  );
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  height: 120vh;
+  color: v.$font-color;
+  font-family: v.$font-body;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.cr-red {
+  color: v.$dark-red;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: v.$font-header;
+  font-style: normal;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 20px;
+}

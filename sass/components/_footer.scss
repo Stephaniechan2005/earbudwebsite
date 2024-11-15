@@ -1,0 +1,79 @@
+@use "../abstracts/variables" as v;
+
+#footer-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 10px;
+}
+
+#footer-menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px;
+  list-style: none;
+}
+
+#footer-menu ul li {
+  margin: 20px 20px;
+}
+
+#footer-menu ul li a {
+  font-family: "Gupter", sans-serif;
+  color: v.$font-color;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#footer-menu ul li:nth-child(1) a:hover {
+  color: v.$cyan;
+}
+
+#footer-nav ul li:nth-child(1) a.active {
+  border-bottom: 2px solid v.$cyan;
+}
+
+#footer-menu ul li:nth-child(2) a:hover {
+  color: v.$pink;
+}
+#footer-menu ul li:nth-child(2) a.active {
+  border-bottom: 2px solid v.$pink;
+}
+
+#footer-menu ul li:nth-child(3) a:hover {
+  color: v.$orange;
+}
+#footer-nav ul li:nth-child(3) a.active {
+  border-bottom: 2px solid v.$orange;
+}
+
+#footer-logo-2 {
+  text-align: right;
+  font-family: "Jost", sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+  #footer-flex {
+    flex-direction: column;
+  }
+
+  #footer-menu ul {
+    display: none;
+  }
+
+  #footer-logo-2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #footer-flex {
+    flex-direction: row;
+  }
+  #footer-menu ul {
+    display: flex;
+  }
+}

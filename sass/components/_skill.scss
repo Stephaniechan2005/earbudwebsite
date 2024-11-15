@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as v;
+
+#carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+#carousel .item {
+  width: 300px;
+  height: 100px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: v.$grey;
+  border-radius: 10px;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+}

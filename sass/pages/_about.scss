@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as v;
+
+#about-me-img img {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#about-me-text {
+  margin-top: 20px;
+}
+
+#about-me-text h3 {
+  font-size: 40px;
+}
+
+#about-me-con {
+  background-color: #feffeb91;
+  padding: 20px 20px;
+  margin-top: 10px;
+}
+
+#resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#resume a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: v.$button-color;
+  text-decoration: none;
+  color: v.$font-color;
+  border-radius: 5px;
+}
+
+#resume a:hover {
+  background-color: v.$button-color-hover;
+}
+
+@media screen and (min-width: 480px) {
+  #about-me-img {
+    display: none;
+  }
+  #about-me-text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #about-me-img {
+    display: block;
+  }
+}
