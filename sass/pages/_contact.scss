@@ -1,0 +1,49 @@
+#contact-info-con-header h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#contact-info-con-left a {
+  color: #65866a;
+}
+
+#contact-info-con-left a:hover {
+  color: #a6bf97;
+}
+
+@media screen and (min-width: 480px) {
+  #contact-info-con-header h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #contact-info-con-left {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #contact-info-con-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #contact-info-con-header h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  #contact-info-con-left {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  #contact-info-con-right {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #contact-info-con-header h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}

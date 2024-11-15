@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as v;
+
+#featuring-projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#featuring-projects-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#featuring-projects-img .box {
+  width: 10%;
+  max-width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: v.$grey;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  #featuring-projects-img div:nth-child(3) {
+    display: none;
+  }
+  #featuring-projects-img div:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #featuring-projects-img div:nth-child(3) {
+    display: block;
+  }
+  #featuring-projects-img div:nth-child(4) {
+    display: block;
+  }
+}

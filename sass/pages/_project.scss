@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as v;
+
+#back-flex {
+  display: flex;
+  gap: 20px;
+}
+#back-flex i {
+  margin-top: 5px;
+}
+
+#back a {
+  text-decoration: none;
+  color: v.$font-color;
+  font-size: 20px;
+}
+
+#title-con {
+  text-align: center;
+  margin-top: -45px;
+}
+
+@media screen and (min-width: 480px) {
+  #back-flex p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #back-flex {
+    margin-top: 20px;
+  }
+  #back-flex p {
+    display: block;
+  }
+}
