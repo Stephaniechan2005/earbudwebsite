@@ -8,28 +8,11 @@
 }
 
 body {
-  background: linear-gradient(
-    45deg,
-    v.$light-pink-transparent,
-    v.$light-green-transparent
-  );
   background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
+
   height: 120vh;
   color: v.$font-color;
   font-family: v.$font-body;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 a {
