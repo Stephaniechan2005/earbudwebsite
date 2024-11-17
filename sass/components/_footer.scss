@@ -1,58 +1,130 @@
 @use "../abstracts/variables" as v;
 
-#footer-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px 10px;
+#footer-nav {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 20px;
 }
 
-#footer-menu ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 10px;
+#footer-nav li {
   list-style: none;
+  padding: 10px;
 }
 
-#footer-menu ul li {
-  margin: 20px 20px;
+#footer-nav a {
+  color: #626262;
 }
 
-#footer-menu ul li a {
-  font-family: "Gupter", sans-serif;
-  color: v.$font-color;
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: 600;
+#footer-nav a:hover {
+  color: #077ed9af;
+  transition-duration: 0.2s;
 }
 
-#footer-menu ul li:nth-child(1) a:hover {
-  color: v.$cyan;
+#footer-nav li:first-of-type {
+  font-weight: 900;
+  color: #333;
 }
 
-#footer-nav ul li:nth-child(1) a.active {
-  border-bottom: 2px solid v.$cyan;
+#footer-nav2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
-#footer-menu ul li:nth-child(2) a:hover {
-  color: v.$pink;
-}
-#footer-menu ul li:nth-child(2) a.active {
-  border-bottom: 2px solid v.$pink;
+#footer-nav2 li {
+  list-style: none;
+  padding: 10px;
 }
 
-#footer-menu ul li:nth-child(3) a:hover {
-  color: v.$orange;
-}
-#footer-nav ul li:nth-child(3) a.active {
-  border-bottom: 2px solid v.$orange;
+#footer-nav2 a {
+  color: #626262;
 }
 
-#footer-logo-2 {
-  text-align: right;
-  font-family: "Jost", sans-serif;
+#footer-nav2 a:hover {
+  color: #7f00daaf;
+  transition-duration: 0.2s;
+}
+
+#footer-nav2 li:first-of-type {
+  font-weight: 900;
+  color: #333;
+}
+
+#footer-nav3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 20px;
+}
+
+#footer-nav3 li {
+  list-style: none;
+  padding: 10px;
+}
+
+#footer-nav3 a {
+  color: #626262;
+}
+
+#footer-nav3 a:hover {
+  color: #da0078af;
+  transition-duration: 0.2s;
+}
+
+#footer-nav3 li:first-of-type {
+  font-weight: 900;
+  color: #333;
+}
+
+#footer-hero {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+
+#footer-color {
+  background: rgba(155, 152, 218, 0.326);
+}
+#footer-hero h3 {
+  margin-top: 30px;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+#footer-privacy .line-seperator {
+  margin-top: 0px;
+}
+
+#footer-contact-info h3 {
+  font-size: 23px;
+}
+
+#footer-contact-info p {
+  margin-bottom: 20px;
+  line-height: 18px;
+  font-size: 11px;
+}
+
+#price-policy {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #626262;
+}
+
+#footer-logo-info {
+  padding: 60px 0px;
+}
+
+#footer_logo {
+  margin-top: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+#footer-logo-info2 {
+  margin-top: -30px;
+  padding: 0px 30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -67,13 +139,30 @@
   #footer-logo-2 {
     text-align: center;
   }
+  #footer-logo-info {
+    padding: 0px;
+  }
+  #footer-logo-info2 {
+    margin-top: -150px;
+    padding: 0px 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  #footer-nav3 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
   #footer-flex {
     flex-direction: row;
   }
   #footer-menu ul {
     display: flex;
+  }
+  #footer-logo-info2 {
+    margin-top: -120px;
+    padding: 0px 30px;
   }
 }
