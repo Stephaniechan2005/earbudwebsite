@@ -9,8 +9,9 @@
 
 body {
   background-size: 400% 400%;
-
+  background-color: #ead5c7ca;
   height: 120vh;
+
   color: v.$font-color;
   font-family: v.$font-body;
 }
@@ -37,11 +38,12 @@ h4,
 h5 {
   font-family: v.$font-header;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
+  color: rgb(252, 130, 152);
 }
 
 h2 {
-  font-size: 46px;
+  font-size: 36px;
 }
 
 h3 {

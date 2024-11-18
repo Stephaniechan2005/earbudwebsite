@@ -130,19 +130,41 @@ model-viewer > #ar-prompt > img {
 */
 
 model-viewer {
-  width: 600px;
-  height: 800px;
-  background-color: #efefef;
+  width: 410px;
+  height: 500px;
   margin: 0 auto;
+}
+
+#wholemodel h2 {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .Hotspot {
   background: url(../images/hotspot.svg) no-repeat center;
   border: 0;
-  width: 45px;
-  height: 38px;
+  width: 35px;
+  height: 30px;
 }
 
+.Hotspot:hover {
+  animation: pulse 1s;
+  transition: transform 0.3s ease-in-out;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .Hotspot:not([data-visible]) {
   opacity: 0;
   pointer-events: none;
@@ -262,4 +284,17 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 
 model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
+}
+@media screen and (min-width: 780px) {
+  model-viewer {
+    width: 600px;
+    height: 800px;
+    margin: 0 auto;
+  }
+  .Hotspot {
+    background: url(../images/hotspot.svg) no-repeat center;
+    border: 0;
+    width: 45px;
+    height: 38px;
+  }
 }

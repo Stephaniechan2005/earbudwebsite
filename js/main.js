@@ -165,3 +165,24 @@ toggleButton.addEventListener("click", () => {
     context.drawImage(images[buds.frame], 0, 0);
   }
 })();
+
+(() => {
+  const earbuds = document.querySelector("#ear-buds");
+  const buttons = document.querySelectorAll("#color-con button");
+
+  //Array.from(buttons) converts the HTMLCollection into an array to use forEach.
+
+  function swapColor(e) {
+    // method 1
+    // console.log(this.id);
+    // earbuds.src = `images/${this.id}.jpg`;
+    // method 2
+    // console.log(e.currentTarget.id);
+    // earbuds.src = `images/${e.currentTarget.id}.jpg`;
+    const selected = e.currentTarget.id;
+    earbuds.src = `images/${selected}.png`;
+  }
+  buttons.forEach((button) => {
+    button.addEventListener("click", swapColor);
+  });
+})();
