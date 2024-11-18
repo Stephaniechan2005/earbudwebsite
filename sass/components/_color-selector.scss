@@ -1,0 +1,48 @@
+#color-info {
+  margin-top: 20px;
+}
+
+#color-info p {
+  margin-top: 28px;
+}
+
+#colorselector {
+  padding: 0 80px;
+}
+
+#color-con button {
+  border: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#buds-con img {
+  width: 300px;
+  height: auto;
+}
+
+#buds-con h2 {
+  margin-top: 20px;
+}
+
+#purple {
+  background-color: #c16bff;
+}
+#red {
+  background-color: #ff3b3b;
+}
+#blue {
+  background-color: #266bff;
+}
+#pink {
+  background-color: #ff75ff;
+}
+
+@media screen and (min-width: 768px) {
+  #buds-con img {
+    width: 500px;
+    height: auto;
+  }
+}
