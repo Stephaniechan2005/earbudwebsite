@@ -116,3 +116,52 @@ toggleButton.addEventListener("click", () => {
     hotspot.addEventListener("mouseleave", hideInfo);
   });
 })();
+
+(() => {
+  const canvas = document.querySelector("#explode-view");
+  const context = canvas.getContext("2d");
+  canvas.width = 1920;
+  canvas.height = 1080;
+
+  const frameCount = 1209; // how many still frames
+  const images = [];
+
+  //Fill the array with images and point to the images
+
+  for (let i = 0; i < frameCount; i++) {
+    const img = new Image();
+
+    // recreating the path images/explode_001.webp
+    img.src = `images/explode_${(i + 1).toString().padStart(5, "0")}.png`;
+    images.push(img);
+  }
+  console.log(images);
+
+  const buds = {
+    frame: 0,
+  };
+
+  gsap.to(buds, {
+    frame: 1208,
+    snap: "frame",
+    scrollTrigger: {
+      trigger: "#explode-view",
+      pin: true,
+      scrub: 3,
+      markers: false,
+      start: "top top",
+      end: "500% end",
+    },
+    onUpdate: render,
+  });
+
+  //when images is first loaded onto the array, call the render
+  images[0].addEventListener("loaded", render);
+  function render() {
+    //console.log(buds.frame);
+    console.log(images[buds.frame]);
+    //wipe the canvas
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(images[buds.frame], 0, 0);
+  }
+})();
