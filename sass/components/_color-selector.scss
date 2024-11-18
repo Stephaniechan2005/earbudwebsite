@@ -1,9 +1,15 @@
+#colorselector-con {
+  margin-top: 30px;
+}
+
 #color-info {
   margin-top: 20px;
+  margin: auto 0;
 }
 
 #color-info p {
   margin-top: 28px;
+  margin-bottom: 20px;
 }
 
 #colorselector {
@@ -16,6 +22,10 @@
   height: 20px;
   border-radius: 30px;
   cursor: pointer;
+}
+
+#color-con h4 {
+  margin-bottom: 10px;
 }
 
 #buds-con img {
