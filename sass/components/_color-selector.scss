@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as v;
+
 #colorselector-con {
   margin-top: 30px;
 }
@@ -39,16 +41,16 @@
 }
 
 #purple {
-  background-color: #c16bff;
+  background-color: v.$purple;
 }
 #red {
-  background-color: #ff3b3b;
+  background-color: v.$red;
 }
 #blue {
-  background-color: #266bff;
+  background-color: v.$blue;
 }
 #pink {
-  background-color: #ff75ff;
+  background-color: v.$pink;
 }
 
 @media screen and (min-width: 768px) {
