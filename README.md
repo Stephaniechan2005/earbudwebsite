@@ -1,6 +1,10 @@
 # portfolio
 
-This repo is for my Earbud website. Please check out thecool earbuds.
+This repo is for my Earbud website. Please check out the cool earbuds.
+The earbud is a crossover of Melody and loop earbud.
+
+![Poster 6](https://github.com/user-attachments/assets/e075392b-fd96-47af-aa0c-382269eb338e)
+
 
 ## Installation
 
