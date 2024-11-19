@@ -217,7 +217,7 @@ toggleButton.addEventListener("click", () => {
       scrollTrigger: {
         trigger: "#header-con",
         toggleActions: "restart pause none none",
-        markers: true,
+        markers: false,
         start: "top center",
         end: "bottom center",
       },
@@ -242,7 +242,7 @@ toggleButton.addEventListener("click", () => {
         scrollTrigger: {
           trigger: "#earbud-info-con",
           toggleActions: "restart pause none none",
-          markers: true,
+          markers: false,
           start: "top center",
           end: "bottom center",
         },
@@ -267,7 +267,7 @@ toggleButton.addEventListener("click", () => {
       scrollTrigger: {
         trigger: "#colorselector-con",
         toggleActions: "restart pause none none",
-        markers: true,
+        markers: false,
         start: "top center",
         end: "bottom center",
       },
@@ -287,7 +287,7 @@ toggleButton.addEventListener("click", () => {
       scrollTrigger: {
         trigger: "#colorselector-con",
         toggleActions: "restart pause none none",
-        markers: true,
+        markers: false,
         start: "top center",
         end: "bottom center",
       },
@@ -308,7 +308,7 @@ toggleButton.addEventListener("click", () => {
       scrollTrigger: {
         trigger: "#eartip-con",
         toggleActions: "restart pause none none",
-        markers: true,
+        markers: false,
         start: "top center",
         end: "bottom center",
       },
@@ -328,7 +328,7 @@ toggleButton.addEventListener("click", () => {
       scrollTrigger: {
         trigger: "#eartip-con",
         toggleActions: "restart pause none none",
-        markers: true,
+        markers: false,
         start: "top center",
         end: "bottom center",
       },
@@ -348,7 +348,7 @@ toggleButton.addEventListener("click", () => {
       scrollTrigger: {
         trigger: "#x-ray-con",
         toggleActions: "restart pause none none",
-        markers: true,
+        markers: false,
         start: "top center",
         end: "bottom center",
       },
@@ -369,7 +369,7 @@ toggleButton.addEventListener("click", () => {
       scrollTrigger: {
         trigger: "#model-con",
         toggleActions: "restart pause none none",
-        markers: true,
+        markers: false,
         start: "top center",
         end: "bottom center",
       },
