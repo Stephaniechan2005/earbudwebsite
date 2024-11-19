@@ -199,3 +199,180 @@ toggleButton.addEventListener("click", () => {
   }
   slider.addEventListener("input", moveDivisor);
 })();
+(() => {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollToPlugin);
+
+  gsap.fromTo(
+    "#header-con",
+    {
+      scale: 0.8,
+      y: -50,
+    },
+    {
+      scale: 1,
+      y: 0,
+      ease: "power3.out",
+      duration: 2,
+      scrollTrigger: {
+        trigger: "#header-con",
+        toggleActions: "restart pause none none",
+        markers: true,
+        start: "top center",
+        end: "bottom center",
+      },
+    }
+  );
+
+  const earbudInfos = document.querySelectorAll("#earbud-infos div");
+
+  console.log(earbudInfos);
+  earbudInfos.forEach((e, index) => {
+    gsap.fromTo(
+      e,
+      {
+        opacity: 0,
+        y: 100,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        ease: "power3.out",
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: "#earbud-info-con",
+          toggleActions: "restart pause none none",
+          markers: true,
+          start: "top center",
+          end: "bottom center",
+        },
+        delay: index * 0.3,
+      }
+    );
+  });
+
+  gsap.fromTo(
+    "#color-info",
+    {
+      opacity: 0,
+      x: -100,
+      y: -50,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      ease: "power3.out",
+      duration: 2,
+      scrollTrigger: {
+        trigger: "#colorselector-con",
+        toggleActions: "restart pause none none",
+        markers: true,
+        start: "top center",
+        end: "bottom center",
+      },
+    }
+  );
+  gsap.fromTo(
+    "#buds-con",
+    {
+      opacity: 0,
+      x: 200,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      ease: "power3.out",
+      duration: 2,
+      scrollTrigger: {
+        trigger: "#colorselector-con",
+        toggleActions: "restart pause none none",
+        markers: true,
+        start: "top center",
+        end: "bottom center",
+      },
+    }
+  );
+
+  gsap.fromTo(
+    "#eartip-buds-con",
+    {
+      opacity: 0,
+      x: -200,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      ease: "power3.out",
+      duration: 3,
+      scrollTrigger: {
+        trigger: "#eartip-con",
+        toggleActions: "restart pause none none",
+        markers: true,
+        start: "top center",
+        end: "bottom center",
+      },
+    }
+  );
+  gsap.fromTo(
+    "#eartip-info-con",
+    {
+      opacity: 0,
+      x: 200,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      ease: "power3.out",
+      duration: 3,
+      scrollTrigger: {
+        trigger: "#eartip-con",
+        toggleActions: "restart pause none none",
+        markers: true,
+        start: "top center",
+        end: "bottom center",
+      },
+    }
+  );
+  gsap.fromTo(
+    "#x-ray-con",
+    {
+      opacity: 0,
+      y: 100,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      ease: "power3.out",
+      duration: 3,
+      scrollTrigger: {
+        trigger: "#x-ray-con",
+        toggleActions: "restart pause none none",
+        markers: true,
+        start: "top center",
+        end: "bottom center",
+      },
+    }
+  );
+
+  gsap.fromTo(
+    "#model-con",
+    {
+      opacity: 0,
+      y: 100,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      ease: "power3.out",
+      duration: 3,
+      scrollTrigger: {
+        trigger: "#model-con",
+        toggleActions: "restart pause none none",
+        markers: true,
+        start: "top center",
+        end: "bottom center",
+      },
+    }
+  );
+})();
