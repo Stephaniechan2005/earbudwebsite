@@ -375,4 +375,53 @@ toggleButton.addEventListener("click", () => {
       },
     }
   );
+
+  const earbudmobileInfos = document.querySelectorAll(
+    "#earbud-model-mobile div"
+  );
+
+  console.log(earbudmobileInfos);
+  earbudmobileInfos.forEach((e, index) => {
+    gsap.fromTo(
+      e,
+      {
+        opacity: 0,
+        y: 100,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        ease: "power3.out",
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: "#earbud-model-mobile-con",
+          toggleActions: "restart pause none none",
+          markers: false,
+          start: "top center",
+          end: "bottom center",
+        },
+        delay: index * 0.3,
+      }
+    );
+  });
+  gsap.fromTo(
+    "#earbud-model-mobile-img",
+    {
+      opacity: 0,
+      y: 100,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      ease: "power3.out",
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#earbud-model-mobile-con",
+        toggleActions: "restart pause none none",
+        markers: false,
+        start: "top center",
+        end: "bottom center",
+      },
+    }
+  );
 })();
