@@ -129,6 +129,10 @@ model-viewer > #ar-prompt > img {
 }
 */
 
+#model-con {
+  display: none;
+}
+
 model-viewer {
   width: 410px;
   height: 500px;
@@ -296,5 +300,8 @@ model-viewer > #ar-prompt > img {
     border: 0;
     width: 45px;
     height: 38px;
+  }
+  #model-con {
+    display: block;
   }
 }

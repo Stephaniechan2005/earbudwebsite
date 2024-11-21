@@ -1,0 +1,42 @@
+#earbud-model-mobile-con {
+  margin-top: 20px;
+  display: block;
+}
+
+#earbud-model-mobile-con h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#earbud-model-mobile-img img {
+  width: 100%;
+  height: auto;
+}
+
+#earbud-model-mobile {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  flex-direction: column;
+}
+#earbud-model-mobile > div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(250, 91, 117, 0.125);
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+#earbud-model-mobile > div > img {
+  width: 80px;
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  #earbud-model-mobile-con {
+    display: none;
+  }
+}
