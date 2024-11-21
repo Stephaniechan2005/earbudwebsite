@@ -304,7 +304,7 @@ toggleButton.addEventListener("click", () => {
       opacity: 1,
       x: 0,
       ease: "power3.out",
-      duration: 3,
+      duration: 2,
       scrollTrigger: {
         trigger: "#eartip-con",
         toggleActions: "restart pause none none",
@@ -324,7 +324,7 @@ toggleButton.addEventListener("click", () => {
       opacity: 1,
       x: 0,
       ease: "power3.out",
-      duration: 3,
+      duration: 2,
       scrollTrigger: {
         trigger: "#eartip-con",
         toggleActions: "restart pause none none",
@@ -344,7 +344,7 @@ toggleButton.addEventListener("click", () => {
       opacity: 1,
       y: 0,
       ease: "power3.out",
-      duration: 3,
+      duration: 2,
       scrollTrigger: {
         trigger: "#x-ray-con",
         toggleActions: "restart pause none none",
@@ -365,7 +365,7 @@ toggleButton.addEventListener("click", () => {
       opacity: 1,
       y: 0,
       ease: "power3.out",
-      duration: 3,
+      duration: 2,
       scrollTrigger: {
         trigger: "#model-con",
         toggleActions: "restart pause none none",
