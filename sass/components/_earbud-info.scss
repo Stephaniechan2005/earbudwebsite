@@ -5,11 +5,13 @@
 
 #earbud-infos {
   display: flex;
+  margin-top: 20px;
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 #earbud-infos > div {
   display: flex;

@@ -216,7 +216,7 @@ toggleButton.addEventListener("click", () => {
       duration: 2,
       scrollTrigger: {
         trigger: "#header-con",
-        toggleActions: "restart pause none none",
+        toggleActions: "restart none none none",
         markers: false,
         start: "top center",
         end: "bottom center",
@@ -241,7 +241,7 @@ toggleButton.addEventListener("click", () => {
         duration: 1.5,
         scrollTrigger: {
           trigger: "#earbud-info-con",
-          toggleActions: "restart pause none none",
+          toggleActions: "restart none none none",
           markers: false,
           start: "top center",
           end: "bottom center",
@@ -266,7 +266,7 @@ toggleButton.addEventListener("click", () => {
       duration: 2,
       scrollTrigger: {
         trigger: "#colorselector-con",
-        toggleActions: "restart pause none none",
+        toggleActions: "restart none none none",
         markers: false,
         start: "top center",
         end: "bottom center",
@@ -286,7 +286,7 @@ toggleButton.addEventListener("click", () => {
       duration: 2,
       scrollTrigger: {
         trigger: "#colorselector-con",
-        toggleActions: "restart pause none none",
+        toggleActions: "restart none none none",
         markers: false,
         start: "top center",
         end: "bottom center",
@@ -307,7 +307,7 @@ toggleButton.addEventListener("click", () => {
       duration: 2,
       scrollTrigger: {
         trigger: "#eartip-con",
-        toggleActions: "restart pause none none",
+        toggleActions: "restart none none none",
         markers: false,
         start: "top center",
         end: "bottom center",
@@ -327,7 +327,7 @@ toggleButton.addEventListener("click", () => {
       duration: 2,
       scrollTrigger: {
         trigger: "#eartip-con",
-        toggleActions: "restart pause none none",
+        toggleActions: "restart none none none",
         markers: false,
         start: "top center",
         end: "bottom center",
@@ -347,7 +347,7 @@ toggleButton.addEventListener("click", () => {
       duration: 2,
       scrollTrigger: {
         trigger: "#x-ray-con",
-        toggleActions: "restart pause none none",
+        toggleActions: "restart none none none",
         markers: false,
         start: "top center",
         end: "bottom center",
@@ -368,7 +368,7 @@ toggleButton.addEventListener("click", () => {
       duration: 2,
       scrollTrigger: {
         trigger: "#model-con",
-        toggleActions: "restart pause none none",
+        toggleActions: "restart none none none",
         markers: false,
         start: "top center",
         end: "bottom center",
@@ -395,7 +395,7 @@ toggleButton.addEventListener("click", () => {
         duration: 1.5,
         scrollTrigger: {
           trigger: "#earbud-model-mobile-con",
-          toggleActions: "restart pause none none",
+          toggleActions: "restart none none none",
           markers: false,
           start: "top center",
           end: "bottom center",
@@ -417,7 +417,7 @@ toggleButton.addEventListener("click", () => {
       duration: 1,
       scrollTrigger: {
         trigger: "#earbud-model-mobile-con",
-        toggleActions: "restart pause none none",
+        toggleActions: "restart none none none",
         markers: false,
         start: "top center",
         end: "bottom center",
