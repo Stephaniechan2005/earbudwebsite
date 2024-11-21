@@ -39,6 +39,10 @@
 #buds-con h2 {
   margin-top: 20px;
 }
+#color-con button:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
 
 #purple {
   background-color: v.$purple;
